@@ -89,7 +89,7 @@ bool HWLayer::espSetup()
 void HWLayer::tftSetup()
 {
     esp_err_t ret;
-    tft_disp_type = DISP_TYPE_ST7735B;
+    tft_disp_type = CONFIG_EXAMPLE_DISPLAY_TYPE;
     _width = DEFAULT_TFT_DISPLAY_WIDTH;  // smaller dimension
     _height = DEFAULT_TFT_DISPLAY_HEIGHT; // larger dimension
     max_rdclock = 8000000;
